@@ -1,0 +1,232 @@
+.input-text, .input-password, .textarea, .input-email{
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 300;
+    padding: .86em 1em;
+    background-color: #f6f6f6;
+    border: 0;
+    box-shadow: none;
+}
+.input-with-icon{
+    position: relative;
+    .sprite{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 8px;
+        right: 8px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+    
+    .input-btn{
+        width: 45px;
+        height: 43px;
+        background-color: #333333;
+        border:none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.form-row{
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.form-header{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;    
+    margin-bottom: 15px;
+    .page-title{
+        margin-bottom: 0.2em;
+    }
+}
+.form-body{
+    margin-bottom: 0;       
+}
+.form-footer{
+    margin: 28px 0 30px 0;
+    br{
+        display: none;
+    }
+    .text-link{
+        margin-left: 35px;
+    }
+}
+.form-row-group{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    &:last-child{
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+.form-row{
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.item-title{
+    letter-spacing: 1.2px;
+    margin-bottom: 0;
+}
+.label{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #666;
+    font-weight: 300;
+}
+select{
+    @extend .input-text;
+    -webkit-appearance: none;
+    background-color: #f6f6f6 !important;
+}
+.form-sec{
+    padding: 60px 0;
+    textarea{
+        min-height: 107px;
+    }
+}
+.form-block-title{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    color: $col-gold;
+}
+.title-border{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.form-group-title{
+    font-size: 1.8em;
+    line-height: 1.2em;
+	font-weight: 400;
+    margin-bottom: 38px;
+	letter-spacing: 0.9px;
+	color: $col-gold;
+}
+::-webkit-input-placeholder { /*Chrome/Opera/Safari*/
+    color: #cccccc;
+    letter-spacing: -0.7px;
+}
+.packages-enquiry-form{
+    .form-footer{
+        .back_package{
+            margin-left: 18px;
+        }
+    }
+}
+.date-field{ background: #f6f6f6 url(../../images/calendar.png) 95% 6px no-repeat;}
+.lbl-checkbox{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #666;
+    font-weight: 300;
+    .inline-block{
+        &:before{
+            content: "";
+            display: inline-block;
+            //position: absolute;
+            width: 1em;
+            height: 1em;
+            //top: 5px;
+            //left: 0;
+            margin-right: 6px;
+            border-radius: 0;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            -webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+            -o-transition: border .15s ease-in-out, color .15s ease-in-out;
+            transition: border .15s ease-in-out, color .15s ease-in-out;
+        }
+        &:focus{
+            outline: 0;
+            box-shadow: none;
+        }
+        &:checked{
+            &:before{
+                content: "";
+                border: 0;
+                color: #fff;
+                width: 1em;
+                height: 1em;
+                background-color: #DA2128;
+                text-align: center;
+            }
+        }
+        
+    }    
+}
+.addtional-infomation{
+    .wpcf7-checkbox{
+        span.wpcf7-list-item{
+            display: block;
+            margin-left: 0;
+            input[type=checkbox]{
+                border: 1px solid #ccc;
+                background-color: #fff;
+                width: 12px;
+                height: 12px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+            input[type="checkbox"]:checked{
+                border: 0;
+                color: #fff;
+                width: 12px;
+                height: 12px;
+                background-color: #DA2128;
+                text-align: center;
+                outline: 0;
+                background-image: url(../../images/check-mark.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            label{
+                display: block;
+                font-size: 1.2em;
+                line-height: 1.3em;
+                color: #666;
+                font-weight: 300;
+                padding-bottom: 5px;
+                .wpcf7-list-item-label{
+                    padding-left: 5px;       
+                }
+            }    
+        }
+    }
+}
+.wpcf7-form-control-wrap{
+    .select{
+        font-size: 1.4em;
+        line-height: 1.2em;
+        color: #666;
+        font-weight: 300;
+        padding: .858em 1em;
+        border-radius: 0;
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        letter-spacing: -.4px;
+        background: url(../../images/dropdown-arrow.png) 91% 18px no-repeat;
+    } 
+}
+.thank-you-block{
+    .check-with-circle{
+        display: block;
+        width: 66px;
+        height: 70px;
+        font-size: 66px;
+        line-height: 66px;
+        margin: 0 auto 30px;
+    }
+} 

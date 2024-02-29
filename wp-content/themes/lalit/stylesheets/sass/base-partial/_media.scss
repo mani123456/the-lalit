@@ -1,0 +1,246 @@
+/**
+ * Calculates numbers to the mathmatical power (exponent)
+ *
+ * @since	1.0.0
+ *
+ * @param	int		$number		The number to increase
+ * @param	int		$exponent	The power to increase the number by
+ *
+ * @return	int					The new number
+ */
+@function pow( $number, $exponent ) {
+	$value: 1;
+	
+	@if $exponent > 0 {
+		@for $i from 1 through $exponent {
+			$value: $value * $number;
+		}
+	}
+	
+	@return $value;
+}
+
+/**
+ * Removes units from values for easier modification
+ *
+ * @since	1.0.0
+ *
+ * @param	int		$number		The number to strip units from
+ *
+ * @return	int					The number without the unit
+ */
+@function strip-unit( $number ) {
+	@if type-of( $number ) == 'number' and not unitless( $number ) {
+		@return $number / ( $number * 0 + 1 );
+	}
+	
+	@return $number;
+}
+
+/**
+ * Calculates the line height based on multiple parameters
+ *
+ * @since	1.0.0
+ *
+ * @param	int		$font-size			The font size
+ * @param	int		$content-width		The width of the content area
+ * @param	int		$ratio				The ratio. Default 1.61803398875 (golden ratio)
+ *
+ * @return	int							The calculated line height
+ */
+@function calculate-line-height( $font-size, $content-width, $ratio: 1.61803398875 ) {
+	$font-size: strip-unit( $font-size );
+	$content-width: strip-unit( $content-width );
+		
+	@return $ratio - ( ( 1 / ( 2 * $ratio ) ) * ( 1 - ( $content-width / ( pow( ( $font-size * $ratio ), 2 ) ) ) ) );
+}
+
+@mixin font-size($size){
+  font-size: $size + px;
+
+  @media (max-width: 767px) {
+    line-height: calculate-line-height( $size, 767px );
+  }
+  @media (max-width: 991px) {
+    line-height: calculate-line-height( $size, 991px );
+  }
+  @media (max-width: 1199px) {
+    line-height: calculate-line-height( $size, 1199px );
+  }
+
+};
+
+@media only screen and (max-width: 768px){
+  body {
+      font-size: 15px;
+  }
+}
+/*
+@media only screen and (max-width: 767px){
+    body{ font-size: 14px; }
+    h1, h2, h3, h4, h5, h6, ul, .unstyled-listing, ol, li, {
+        line-height: calculate-line-height(24px, 767px, 1.2);
+    }
+    p{
+      line-height: calculate-line-height(24px, 767px, 1.2);
+    }
+    .col.col1{
+        margin-left: 0;
+        width: 100%;
+    }
+    .col.col2{
+        @extend .col.col1;
+    }
+    .col.col3{
+        @extend .col.col1;
+    }
+    .col.col4{
+        @extend .col.col1;
+    }
+    .col.col5{
+        @extend .col.col1;
+    }
+    .col.col6{
+        @extend .col.col1;
+    }
+    .col.col7{
+        @extend .col.col1;
+    }
+    .col.col8{
+        @extend .col.col1;
+    }
+    .col.col9{
+        @extend .col.col1;
+    }
+    .col.col10{
+        @extend .col.col1;
+    }
+    .col.col11{
+        @extend .col.col1;
+    }
+    .col.col12{
+        @extend .col.col1;
+    }
+    .colZero.col1{
+        margin-left: 0;
+        width: 100%;
+    }
+    .colZero.col2{
+        @extend .col.col1;
+    }
+    .colZero.col3{
+        @extend .col.col1;
+    }
+    .colZero.col4{
+        @extend .col.col1;
+    }
+    .colZero.col5{
+        @extend .col.col1;
+    }
+    .colZero.col6{
+        @extend .col.col1;
+    }
+    .colZero.col7{
+        @extend .col.col1;
+    }
+    .colZero.col8{
+        @extend .col.col1;
+    }
+    .colZero.col9{
+        @extend .col.col1;
+    }
+    .colZero.col10{
+        @extend .col.col1;
+    }
+    .colZero.col11{
+        @extend .col.col1;
+    }
+    .colZero.col12{
+        @extend .col.col1;
+    }
+    .col.offsetBy1:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy2:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy3:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy4:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy5:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy6:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy7:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy8:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy9:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy10:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy11:first-child{
+        margin-left: 0;
+    }
+    .col.offsetBy12:first-child{
+        margin-left: 0;
+    }
+    .span.span1{
+        width: 100%;
+    }
+    .span.span2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .span.span3{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span4{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span5{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span6{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span7{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span8{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span9{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span10{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span11{
+        width: 100%; 
+        margin-left: 0;
+    }
+    .span.span12{
+        width: 100%; 
+        margin-left: 0;
+    }
+    
+}
+*/

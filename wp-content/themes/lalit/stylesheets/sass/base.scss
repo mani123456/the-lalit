@@ -1,0 +1,54 @@
+// Core variables and mixins
+@import 'base-partial/_variables.scss';    
+@import 'base-partial/_mixin.scss';
+
+// Normalize and reset
+@import 'base-partial/_reset-and-normalize.scss';
+@import 'base-partial/_grid.scss';
+
+//Sprite css
+@import 'base-partial/_sprite.scss';
+
+
+// Core css
+@import 'base-partial/_typography.scss';
+@import 'base-partial/_button-groups.scss';
+@import 'base-partial/_table.scss';
+@import 'base-partial/_convenience.scss';
+@import 'base-partial/_form.scss';
+@import 'base-partial/_messages.scss';
+@import 'base-partial/_media.scss';
+@import 'base-partial/_map.scss';
+@import 'base-partial/_jquery-ui.scss'; 
+
+// Components
+@import 'base-partial/_navigation.scss';
+
+
+%scroll-y{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/*.main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.left-bar{
+    @include grid-span(3);
+}
+.ccontent-area{
+    @include grid-span(9);
+}
+
+
+ul li{
+    @include grid(6, 2%);
+    img{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+*/
+
+

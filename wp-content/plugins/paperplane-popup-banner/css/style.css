@@ -1,0 +1,76 @@
+.cookies-container {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+.cookies-container>.cookies-row {
+    width: 92.3553%;
+    max-width: 1280px;
+    margin: 0 auto;
+    zoom: 1;
+    box-sizing: border-box;
+}
+.cookies-clearfix:before {
+    content: "";
+    display: table;
+}
+.cookies-clearfix:after {
+    clear: both;
+}
+.cookies-section {
+    position: fixed;
+    bottom: 0;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #262626;
+    z-index: 99;
+}
+.cookies-description-section {
+    float: left;
+    width: 85%;
+}
+.cookies-close-section {
+    float: left;
+    width: 15%;
+    position: relative
+}
+.cookies-description {
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+.cookies-link:hover { color: #fff; }
+.cookies-close {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-position: 0 0;
+    cursor: pointer;
+    z-index: 8;
+    background-image: url('/wp-content/plugins/paperplane-popup-banner/images/cookie-closing-icon.png');
+}
+.cookies-close:hover {
+    background-position: -18px 0;
+}
+
+@media screen and (max-device-width: 767px) {
+    .cookies-container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .cookies-container>.cookies-row {
+        width: 100%;
+        max-width: 100%;
+    }
+    .cookies-description {
+        font-size: 10px/1.2 Roboto,sans-serif;
+        line-height: 12px;
+        display: inline-block;
+        text-align: justify;
+    }
+    .cookies-section {
+    bottom: 0;
+    padding: 10px 0;
+}
+}

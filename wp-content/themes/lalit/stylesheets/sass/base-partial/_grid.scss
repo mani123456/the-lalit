@@ -1,0 +1,202 @@
+// Media
+$tablet: "(min-width: 768px)";
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+@mixin OnDesktops{
+  @media screen and (min-width: 768px) {}
+}
+
+/*@mixin OnDesktops{
+    @media (min-width: $breakpoint-tablet) {
+
+    }
+}*/
+.container { padding-right: 2em; padding-left:2em } /* padding needs to be tested /* Use this whenever you need a full-width */
+.fluidRow { 
+  @include box-sizing(border-box);
+  /*max-width:1170px;*/
+  margin: 0 auto; 
+  zoom:1; 
+  @include OnDesktops;
+}
+.fluidRow:before,
+.fluidRow:after { content:""; display:table;}
+.fluidRow:after { clear:both; }
+
+.row { width:100%; margin: 0 auto; zoom:1; @include box-sizing(border-box);@include box-sizing(border-box); }
+.row:before,
+.row:after{ content:""; display:table;}
+.row:after{ clear:both; }
+.main-wrap{ width: 100%;}
+.container{
+    > .row{
+        width: 93.75%;
+        max-width: 960px;
+        margin: 0 auto; 
+        zoom:1; 
+        @include box-sizing(border-box);
+    }
+}
+@media #{$tablet} {
+    .col { 
+        margin-left: 1.5%;
+        float: left;
+        @include box-sizing(border-box);
+        @include OnDesktops;
+    }
+    .colZero { 
+        margin: 0%; 
+        float: left;
+        @include box-sizing(border-box);
+        @include OnDesktops;
+    }
+}
+$colmargin : 1.5%;
+$colwidth: (100% - ($colmargin * 11)) / 12;
+@mixin calculateColWidth ($col)  {  width: $colwidth * $col + $colmargin * ( $col - 1 )  }
+
+@media #{$tablet} {
+    .col1 { @include calculateColWidth(1); }
+    .col2 { @include calculateColWidth(2); }
+    .col3 { @include calculateColWidth(3); }
+    .col4 { @include calculateColWidth(4); }
+    .col5 { @include calculateColWidth(5); }
+    .col6 { @include calculateColWidth(6); }
+    .col7 { @include calculateColWidth(7); }
+    .col8 {@include calculateColWidth(8); }
+    .col9 {@include calculateColWidth(9); }
+    .col10 {@include calculateColWidth(10); }
+    .col11 {@include calculateColWidth(11); }
+    .col12 {@include calculateColWidth(12); margin-right: 0;}
+    .col:first-child {  margin-left: 0; }
+}
+$colZerowidth : 100% / 12; 
+@mixin calculateColZero ($colZero) {  width: $colZerowidth * $colZero }
+ 
+@media #{$tablet} {
+    .colZero			{ margin: 0; float: left;}
+    .colZero.col1 		{ @include calculateColZero(1); }
+    .colZero.col2 		{ @include calculateColZero(2); }
+    .colZero.col3 		{ @include calculateColZero(3); }
+    .colZero.col4 		{ @include calculateColZero(4); }
+    .colZero.col5 		{ @include calculateColZero(5); }
+    .colZero.col6		{ @include calculateColZero(6); }
+    .colZero.col7 		{ @include calculateColZero(7); }
+    .colZero.col8 		{ @include calculateColZero(8); }
+    .colZero.col9 		{ @include calculateColZero(9); }
+    .colZero.col10 		{ @include calculateColZero(10); }
+    .colZero.col11 		{ @include calculateColZero(11); }
+    .colZero.col12 		{ @include calculateColZero(12); }
+}
+
+@mixin calculateColOffset ($col)  			{  margin-left: $colwidth * $col + $colmargin * ($col + 1)   }
+@mixin calculateColOffsetFirstChild ($col)  	{  margin-left: $colwidth * $col + $colmargin * $col }
+
+@media #{$tablet} {
+    .col.offsetBy1 { @include calculateColOffset(1);}
+    .col.offsetBy2 { @include calculateColOffset(2);}
+    .col.offsetBy3 { @include calculateColOffset(3); }
+    .col.offsetBy4 { @include calculateColOffset(4);}
+    .col.offsetBy5 { @include calculateColOffset(5);}
+    .col.offsetBy6 { @include calculateColOffset(6); }
+    .col.offsetBy7 { @include calculateColOffset(7); }
+    .col.offsetBy8 { @include calculateColOffset(8); }
+    .col.offsetBy9 { @include calculateColOffset(9); }
+    .col.offsetBy10 { @include calculateColOffset(10); }
+    .col.offsetBy11 { @include calculateColOffset(11); }
+    .col.offsetBy12 { @include calculateColOffset(12); }
+
+    .col.offsetBy1:first-child { @include calculateColOffsetFirstChild(1);}
+    .col.offsetBy2:first-child { @include calculateColOffsetFirstChild(2);}
+    .col.offsetBy3:first-child { @include calculateColOffsetFirstChild(3); }
+    .col.offsetBy4:first-child { @include calculateColOffsetFirstChild(4);}
+    .col.offsetBy5:first-child { @include calculateColOffsetFirstChild(5);}
+    .col.offsetBy6:first-child { @include calculateColOffsetFirstChild(6); }
+    .col.offsetBy7:first-child { @include calculateColOffsetFirstChild(7); }
+    .col.offsetBy8:first-child { @include calculateColOffsetFirstChild(8); }
+    .col.offsetBy9:first-child { @include calculateColOffsetFirstChild(9); }
+    .col.offsetBy10:first-child { @include calculateColOffsetFirstChild(10); }
+    .col.offsetBy11:first-child { @include calculateColOffsetFirstChild(11); }
+    .col.offsetBy12:first-child { @include calculateColOffsetFirstChild(12); }
+}
+
+@mixin calculateColZeroOffset ($colZero)            {  margin-left: $colZerowidth * $colZero}
+@mixin calculateColZeroOffsetFirstChild ($colZero)      {  margin-left: $colZerowidth * $colZero} 
+
+@media #{$tablet} {
+    .colZero.offsetBy1 { @include calculateColZeroOffset(1);}
+    .colZero.offsetBy2 { @include calculateColZeroOffset(2);}
+    .colZero.offsetBy3 { @include calculateColZeroOffset(3); }
+    .colZero.offsetBy4 { @include calculateColZeroOffset(4);}
+    .colZero.offsetBy5 { @include calculateColZeroOffset(5);}
+    .colZero.offsetBy6 { @include calculateColZeroOffset(6); }
+    .colZero.offsetBy7 { @include calculateColZeroOffset(7); }
+    .colZero.offsetBy8 { @include calculateColZeroOffset(8); }
+    .colZero.offsetBy9 { @include calculateColZeroOffset(9); }
+    .colZero.offsetBy10 { @include calculateColZeroOffset(10); } 
+    .colZero.offsetBy11 { @include calculateColZeroOffset(11); }
+    .colZero.offsetBy12 { @include calculateColZeroOffset(12); }
+
+    .colZero.offsetBy1:first-child { @include calculateColZeroOffsetFirstChild(1);}
+    .colZero.offsetBy2:first-child { @include calculateColZeroOffsetFirstChild(2);}
+    .colZero.offsetBy3:first-child { @include calculateColZeroOffsetFirstChild(3); }
+    .colZero.offsetBy4:first-child { @include calculateColZeroOffsetFirstChild(4);}
+    .colZero.offsetBy5:first-child { @include calculateColZeroOffsetFirstChild(5);}
+    .colZero.offsetBy6:first-child { @include calculateColZeroOffsetFirstChild(6); }
+    .colZero.offsetBy7:first-child { @include calculateColZeroOffsetFirstChild(7); }
+    .colZero.offsetBy8:first-child { @include calculateColZeroOffsetFirstChild(8); }
+    .colZero.offsetBy9:first-child { @include calculateColZeroOffsetFirstChild(9); }
+    .colZero.offsetBy10:first-child { @include calculateColZeroOffsetFirstChild(10); }
+    .colZero.offsetBy11:first-child { @include calculateColZeroOffsetFirstChild(11); }
+    .colZero.offsetBy12:first-child { @include calculateColZeroOffsetFirstChild(12); }
+}
+.span {
+	display:inline-block;
+	margin-right: -0.9%;  
+	margin-left: 1.5%;
+	@include box-sizing(border-box);	
+	} 
+	
+.col:first-child,
+.span:first-child { margin-left: 0 }
+
+/*.row{
+    >.col{
+        margin-left: 0;
+    }
+}*/
+ 
+
+//$spanwidth: 3.666666%;
+$spanwidth: (100% - ($colmargin * 11)) / 12;
+$spanmargin: 1.5%;
+
+@mixin calculateSpanWidth ($span) {  width: $spanwidth * $span + $spanmargin * ( $span - 1 )  }
+@media #{$tablet} {
+    .span.span1{ @include calculateSpanWidth(1); }
+    .span.span2{ @include calculateSpanWidth(2); }
+    .span.span3{ @include calculateSpanWidth(3); }
+    .span.span4{ @include calculateSpanWidth(4); }
+    .span.span5{ @include calculateSpanWidth(5); }
+    .span.span6{ @include calculateSpanWidth(6); }
+    .span.span7{ @include calculateSpanWidth(7); }
+    .span.span8{ @include calculateSpanWidth(8); }
+    .span.span9{ @include calculateSpanWidth(9); }
+    .span.span10{ @include calculateSpanWidth(10); }
+    .span.span11{ @include calculateSpanWidth(11); }
+    .span.span12{ @include calculateSpanWidth(12); }
+}
+
+@mixin col-grid ($cols, $mgn) {
+    float: left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    width: ((100% - (($cols - 1) * $mgn)) / $cols);
+    &:nth:child(#{$cols}n){
+        margin-right: 0;
+    }
+}

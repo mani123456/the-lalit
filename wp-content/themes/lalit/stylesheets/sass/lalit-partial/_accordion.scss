@@ -1,0 +1,87 @@
+ //policies-block in 
+.accordion{         
+    box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.54);                  
+    padding-bottom: 0;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ddd;
+    li{
+        border-top: 1px solid $col-light-grey ;
+        &:first-child{
+        border:none;
+        }
+    }     
+}  
+.collapse-data{
+    padding:2.5em 2.5em 2em 2.5em;
+    background-color:#fff3de;
+    -webkit-box-shadow:inset 0 7px 9px -7px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.2);
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.2); 
+    ul{
+        padding: 0 0 0 1em;
+        margin-left: 5px;
+        li{
+            margin-bottom: 13px;
+            font-size: 1.4em;
+            font-family:$font-family-roboto;
+            font-weight: 400;
+            letter-spacing: .6px;
+            color: $col-grey;
+            border: none;
+        }
+    }
+}
+.check-col{
+    margin-bottom: 30px;
+    .meta-label{
+        display:block;
+        text-transform: uppercase;
+        font-size:1.2000000000000002em;
+        font-family:$font-family-roboto;
+        font-weight: 400;
+        color: $col-grey;
+    }
+
+    .meta-value{
+        font-size:2em;
+        font-family:$font-family-roboto;
+        font-weight: 400;
+        letter-spacing: 0.5px;    
+    }
+
+}   
+.accordion-head {
+    display: block;
+    padding: 2.5em;
+    position: relative;
+    &.active{           
+        &:after{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 9px 0 9px;
+            border-color: $col-white transparent transparent ;
+            content: "";
+            top:100%;
+            position: absolute;
+            left: 4%;
+        }
+        .accordion-heading{
+            font-family:$font-family-roboto;
+            font-weight: 700;
+        }
+    }   
+    span{
+        display: inline-block;
+        &.sprite{
+            float: right;
+        }
+    }
+}
+.accordion-heading{
+    color:#666;
+    letter-spacing: 1.2px;
+    font-family: $font-family-roboto;
+    font-weight: 400;  
+    font-size: 1.4000000000000001em;
+}   

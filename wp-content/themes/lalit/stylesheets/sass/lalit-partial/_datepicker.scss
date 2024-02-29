@@ -1,0 +1,156 @@
+.parent-element select:focus, option:focus, .parent-element select::-moz-focus-inner, .parent-element option::-moz-focus-inner {
+    outline: none;
+    border: none; 
+}
+.input-with-icon .ui-datepicker-trigger{
+    border:0px;
+}
+.lalit-booking-widget .horizontal-book-widget select, .lalit-booking-widget .horizontal-book-widget .date-picker{
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding: 0.7em 1em;
+    box-shadow:initial;
+    outline: none;
+    border:none;
+    -moz-outline: none;
+    -moz-user-focus: none;
+}
+.input-with-icon .ui-datepicker-trigger{
+    width:20px;
+    height:20px;
+}
+.hotel-booking-widget .horizontal-book-widget .ui-datepicker-trigger {
+    top: 9px;
+    right: 15px;
+}
+.parent-element .btn{
+    padding: 0.625em 1.5em;
+    line-height: 1.4em;
+    font-size: 1.4em;
+    font-family: 'helveticaneuelight', serif;
+    letter-spacing: 0.2px;
+}
+.lalit-booking-widget .horizontal-book-widget select:hover, .horizontal-book-widget .parent-element .date-picker:hover{
+    background-color: #e7e7e7;
+    transition:all 0.3s ease-in-out;
+}
+
+//Date-picker
+.ui-widget.ui-widget-content{
+    width: 54.5em !important;
+    top: 640.5px;
+    left: 55em !important;
+    padding: 4em;
+    border:0px;
+    box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.54);
+}
+.ui-datepicker-multi .ui-datepicker-group table{
+    margin:0 auto 0em;
+}
+.ui-datepicker-group .ui-widget-header{
+    border:0px;
+    background:transparent;
+}
+.ui-state-default{
+    font-size:16px;
+    text-align:center;
+    background:#fff;
+    border:1px solid #e8e8e8;
+    color: #333333 !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+    border:1px solid #e8e8e8;
+    background:#fff;
+}
+.ui-datepicker td a{
+    padding:0.5em;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: $font-family-roboto;
+    font-weight: 400;
+}
+.ui-datepicker td a:hover{
+    background: #000;
+}
+.css-traingle{
+    position: absolute;
+    top: 97px;
+    z-index: 99999;
+    display:block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #ffffff transparent;
+    line-height: 0px;
+    _border-color: #000000 #000000 #ffffff #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.ui-datepicker .ui-datepicker-calendar td{
+    border:0px;
+    padding:0px;   
+}
+.ui-widget-content .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+    border: 1px solid #ccc;
+    background: #ffffff;
+    color: #000;   
+}
+.ui-datepicker .ui-datepicker-title{
+    font-size:1.6em;
+    font-family: $font-family-prata;
+    font-weight: 100;
+    color:#333;
+}
+.ui-datepicker td .ui-state-default{
+    text-align:center;
+}
+.ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background-color: #976107;
+    color:#fff;
+}
+.ui-datepicker th span{
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: $font-family-roboto;
+    font-weight: 400;
+}
+.ui-datepicker .ui-state-default:hover{
+    background-color: #976107 !important;
+    color:#fff !important;  
+}
+.ui-datepicker td span, .ui-datepicker td a{
+    padding:.5em;
+}
+.ui-widget-header .ui-icon { background-image: url("/wp-content/themes/lalit/images/arrow.png"); }
+.ui-icon-circle-triangle-e { background-position: -23px -1px;}
+.ui-icon-circle-triangle-w{ background-position: 3px 2px; }
+.ui-widget-header .ui-datepicker-next:hover, .ui-widget-header .ui-datepicker-prev:hover{
+    background:transparent;
+    border:0px;
+}
+.ui-datepicker .ui-datepicker-buttonpane button{ text-indent:-99999px; }
+.lalit-booking-widget .ui-datepicker-buttonpane .ui-state-default{ background:transparent; }
+.ui-datepicker .ui-datepicker-buttonpane .ui-datepicker-close{
+    background-image: url("/wp-content/themes/lalit/images/close-icon.png");
+    width:11px;
+    height:11px;
+    padding:0em;
+    border:0px;
+}
+.ui-datepicker .ui-datepicker-buttonpane  .ui-state-default:hover{ background-color:transparent !important; }
+.ui-widget-content{ border:0px; }
+.ui-datepicker .ui-datepicker-buttonpane{ margin:0em; } 
+.ui-widget-content .ui-state-highlight.ui-state-active, .ui-datepicker-current-day .ui-state-active{
+    color: #fff !important;
+    border: 1px solid #976107!important;
+    background-color: #976107!important;
+}
+.ui-datepicker .ui-datepicker-header{
+    background: transparent;
+    border: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}

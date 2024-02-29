@@ -1,0 +1,243 @@
+// Horizontal booking widget
+.booking-widget{
+    .input-text{
+        font-size: 1.4em;
+        line-height: 1.2em;
+        color: #666666;
+        font-weight: 400;
+        padding: 0.858em 1.5em;
+        border-radius: 0;
+        border: 0;    
+    }
+    .label{
+        font-size: 1.4em;
+        line-height: 1.2857142857142856em;
+        font-weight: 400;
+        color: #666;
+        margin-bottom: 0.7142857142857142em;
+        text-align: left;
+        letter-spacing: -0.1px
+    }
+    select{
+        font-size: 1.4em;
+        line-height: 1.2em;
+        color: #666666;
+        font-weight: 300;
+        padding: 0.858em 1em;
+        border-radius: 0;
+        border: 0;
+        /*-webkit-box-shadow: inset 0px -3px 7px 0 rgba(0, 0, 0, 0.07);
+            -moz-box-shadow: inset 0px -3px 7px 0 rgba(0, 0, 0, 0.07);
+                -ms-box-shadow: inset 0px -3px 7px 0 rgba(0, 0, 0, 0.07);
+                    box-shadow: inset 0px -3px 7px 0 rgba(0, 0, 0, 0.07);
+        box-shadow: inset 0px -3px 7px 0 rgba(0, 0, 0, 0.07);*/
+        background-color: #efefef;
+        -webkit-appearance: none;
+            -moz-appearance: none;
+                -ms-appearance: none;
+                    appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        letter-spacing: -0.4px;
+        background: url('../../images/dropdown-arrow.png') no-repeat 91% 18px;
+    }
+    .selecthotel{
+        background-position: 95% 18px;
+        overflow: hidden !important;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 30px; 
+    }
+    select::-ms-expand{
+        display: none;
+    }
+    .date-picker{
+        @extend select;
+        background: url('../../images/cal-ico.png') no-repeat 90% 11px;
+    }
+    .ui-datepicker-trigger{
+        top: 4px;
+        right: 4px;       
+    }
+    .btn{
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.26em;
+        padding: 0.734em 0;
+        text-align: center;
+    }
+    .child-element{
+        margin: 20px 0 0 0;    
+        .childrenAgeContainer{
+            .span{
+                &.span2{
+                    margin-right: -.3%;
+                }
+            }
+            .label{
+                margin-bottom: 0;
+            }
+            .childrenAgeField{
+                .span{
+                    vertical-align: top;
+                }
+            }
+        }
+        .age-child{
+            position: relative;
+            .label-child{
+                font-size: 1.4em;
+                font-weight: normal;
+                line-height: 1.3em;
+                color: #666666;
+                background-color: #eee;
+                //border-right: 1px solid #ccc;
+                padding: 0.786em 0.6em;
+                display: inline-table;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                text-align: center;
+            }    
+            .input-age{
+                padding-left: 40px;
+                margin: 0;
+            }
+        }
+    }
+}
+.h-align-widget{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 92.3553%;
+    max-width: 1280px;
+    padding: 3em 6em;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 7.5px 0.5px rgba(102, 102, 102, 0.54);
+    z-index: 2;
+}
+.book-item{ 
+    position: relative;
+}
+
+// Vertical booking widget
+.v-align-widget{
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 300px;
+    padding: 22px; 
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 0 5.6px 0.4px rgba(51, 51, 51, 0.28);
+    z-index: 9;
+    .form-row{
+        &:last-child{
+            margin-bottom: 0;
+        }    
+        .btn{
+            width: 100%;
+        }
+    }
+    .input-with-icon .ui-datepicker-trigger{
+        margin: 10px 15px;
+    }
+    .row{
+        .col9{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 0;
+            .row{
+                .col4{
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+                .col2{
+                    width: calc(50% - 5px);
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    &:nth-child(even){
+                        margin-left: 0;
+                    }
+                }
+                .childrenAgeContainer{
+                    .span.span2{
+                        width: calc(50% - 5px);
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        margin-right: -.9%;    
+                        vertical-align: top;
+                        &:nth-child(even){
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .childrenAgeField{
+                    margin: 0; 
+                    .span{
+                        vertical-align: top; 
+                    }
+                }
+            }
+        }
+        .col3{
+            @extend .col9;
+        }    
+    }
+    
+}
+.local-navigation{
+    .v-align-widget{
+        top: 41px;
+    }
+}
+.vertical-booking-widget{
+    .age-child{
+        border: none;
+        border-radius: 0;
+        .label-child{
+            font-size: 1.4em;
+            line-height: 1.4em;
+            padding: 0.86em 1em;
+        }
+        select{
+            width: 100%;
+            font-size: 1.4em;
+            line-height: 1.4em;
+            font-weight: 300;
+            padding: 0.86em 1em;
+            margin: 0;
+            background-color: #f6f6f6;
+            border: 0;
+            box-shadow: none;
+        }
+    }
+}
+.v-align-widget{
+    
+}
+.lalit-booking-widget .ui-datepicker-multi-2 .ui-datepicker-group{
+    width:45%;
+    margin-right:46px;
+    &:nth-child(2){
+        margin-right:0px;
+    }
+}
+.lalit-booking-widget .ui-state-active, .lalit-booking-widget .ui-widget-content .ui-state-active, .lalit-booking-widget .ui-widget-header .ui-state-active, .lalit-booking-widget a.ui-button:active, .lalit-booking-widget ui-button:active, .lalit-booking-widget .ui-button.ui-state-active:hover{
+    background: #976107 !important;
+    color: #fff !important;
+}
+.horizontal-book-widget .childrenAgeContainer .label{
+    font-size: 1.3em;
+    margin-top:12px;
+}
+.lalit-booking-widget .ui-datepicker-multi .ui-datepicker-buttonpanel{ border:0px; }
+.ui-datepicker .ui-datepicker-buttonpane button{
+    position: absolute;
+    top: 9px;
+    right: 22px;
+}

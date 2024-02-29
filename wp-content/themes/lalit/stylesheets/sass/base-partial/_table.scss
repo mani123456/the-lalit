@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table{
+    tr{
+        th{
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+        }
+    }
+}
+.table{
+    >thead{
+        >tr{
+            th{
+                font-weight: 700;
+                border-bottom: 1px solid #ddd;;
+            }       
+        }
+    }
+}
+.table{
+    tr{
+        td{
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    }
+}

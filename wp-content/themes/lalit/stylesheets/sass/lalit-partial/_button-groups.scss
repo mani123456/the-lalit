@@ -1,0 +1,112 @@
+// Default Button
+.btn{ 
+    font-size: 1.6em;
+    line-height: 1em;
+    font-family: $font-family-roboto;
+    font-weight: 500;
+     letter-spacing: 0.4px;
+    padding: 0.625em 1.5em;
+    border: 0;
+    border-radius: 0;
+    color: $col-white;
+    background-color: $col-red;
+    text-transform: uppercase;
+    &:focus{
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+// Primary Button
+.primary-btn{
+    background-image: linear-gradient(to top, #a30309, #a30309 7%, #db2128 12%, #db2128), linear-gradient(#db2128, #db2128);
+    &:hover{
+       background-color: #bd1e24;
+	   box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.22);    
+       background-image: none;        
+    }
+}
+
+// Secondary Button
+.secondary-btn{
+    background-image: linear-gradient(to top, #100808, #181314 7%, #232122 12%, #232122), linear-gradient(#0a0905, #0a0905);
+    &:hover{
+       background-color: #414141;
+	   box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.22);
+    }
+}
+
+// Tertiary Button
+.tertiary-btn{
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: $col-red;
+    &:before{
+        display: block;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10px;
+        border: 1px solid #cccccc;
+        border-bottom: 0;
+    }
+    &:after{
+        display: block;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        border: 1px solid #cccccc;
+        border-top: 0;
+    }
+    &:hover{
+        color: $col-red;
+        background-color: transparent;
+        &:before{
+            height: 100%;
+        }
+        &:after{
+            height: 100%;
+        }
+    }
+    &:focus{
+       @extend .tertiary-btn:hover; 
+    }
+    &:active{
+       @extend .tertiary-btn:hover;  
+    }
+}
+.view-more-btn{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+	background-color: #ffffff;
+    font-size: 1.4em;
+    line-height: 1.143em;
+    color: #999;
+}
+.slides{
+    li{
+        position: relative;
+        .view-more-btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+/* Koala compatiblity not required - used elsewhere */
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+.pull-left{ float: left;}
+.pull-right{ float: right;}
+.hide {
+  display: none !important;
+}
+.block{display: block;}
+.inline-block{display: inline-block;}
+
+.clearfix { 
+	zoom:1; 
+	&:before,
+	&:after { 
+		content:""; 
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}	
+}
+
+.pad { 
+	padding:15px; 
+}
+.mar-bot10{ margin-bottom: 10px;}
+.mar-bot15{ margin-bottom: 15px;}
+hr{
+    margin: 20px 0;
+}
+.inline {
+	> li { 
+		float:left; 
+		margin-right:10px; 
+		@include box-sizing(border-box);
+		&:last-child { 
+			margin-right:0; 
+		}	 	
+	}
+}
+	
+.dots {
+    li { 
+        margin-right: 0.8em; 
+        float:left; 
+    }
+    li:before { 
+        content: " . "; 
+        color: #999; 
+        font-weight: bold; 
+        position: relative; 
+        left: -0.1em; 
+        bottom: 0.2em; 
+    }
+    li:first-child:before { 
+        content: ""; 
+        padding: 0; 
+    }
+}
+	
+.pipes {
+    li { 
+        margin-right: 0.4em;
+        float:left; 
+    }
+    li:before { 
+        content: " | "; 
+        color: #999; 
+        position: relative; 
+        left: -0.2em; 
+    }
+    li:first-child:before { 
+        content: ""; 
+        padding: 0; 
+    }
+}	
+
+
+/* for red links */
+
+a.negative  { 
+	color:#CC3333; 
+}
+
+.relative { 
+	position:relative; 
+}
+
+.ir { 
+	text-indent:-9000px;
+}
+
+.truncate { 
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+	overflow:hidden; 
+	line-height:1.25em; //this has been given because the overflow chops off below the base line
+}
+
+//	Kedar needs to confirm of this is being used
+//	.positive {
+//	padding-left:20px;
+//	position:relative;
+//	color:#286c18;
+//	} 
+
+
+/* disable page scroll added by Parvez to be applied on html/body tag */
+
+.disablePageScroll{
+	height:100%;
+	overflow:hidden;
+}
+
+/* pre made blocks and boxes */
+
+.featured { 
+	background-color: #fff;  
+	border:1px solid; 
+	border-color: rgba(255,255,255,1) rgba(255,255,255,0.5) rgba(0,0,0,0.1) rgba(255,255,255,0.5); 
+}
+
+.strikeOut { 
+	text-decoration:line-through;
+}

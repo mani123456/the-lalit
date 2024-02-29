@@ -1,0 +1,1045 @@
+$sprite-bg-size:( $font-size * 4.725); // Calculating background size of the icon 18.898
+  
+.sprite{ 
+    height: auto;
+    &:before{
+        background-image: url('/wp-content/themes/lalit/images/sprite.svg');
+        background-size: $sprite-bg-size auto;
+    }
+}
+.flex-nav-prev{
+    a{
+        &.flex-prev{
+            &:before{
+                display: block; 
+                width: $sprite-size;
+                height: $sprite-size;
+                background-image: url('/wp-content/themes/lalit/images/sprite.svg');
+                background-size: $sprite-bg-size auto;       
+            }   
+        }    
+    }
+}
+.flex-nav-next{
+    a{
+        &.flex-next{
+            &:before{
+                display: block;
+                width: $sprite-size;
+                height: $sprite-size;
+                background-image: url('/wp-content/themes/lalit/images/sprite.svg');
+                background-size: $sprite-bg-size auto;    
+            }
+        }
+    }
+}
+.fancybox-skin{
+    border-radius: 0;
+}
+.fancybox-close{    
+    display: block;
+    top: 35px;
+    right: 35px;
+    width: $sprite-size;
+    height: $sprite-size;
+    font-size: 20px;
+    background-image: url('/wp-content/themes/lalit/images/sprite.svg');
+    background-size: $sprite-bg-size auto;  
+    background-position: -1.86em -3.44em; 
+}
+/*.owl-nav{ 
+    .owl-prev{
+        display: block; 
+        width: $sprite-size;
+        height: $sprite-size;
+        background-image: url('/wp-content/themes/lalit/images/sprite.svg');
+        background-size: $sprite-bg-size auto;       
+    }
+    .owl-next{
+        display: block; 
+        width: $sprite-size;
+        height: $sprite-size;
+        background-image: url('/wp-content/themes/lalit/images/sprite.svg');
+        background-size: $sprite-bg-size auto;  
+    } 
+}*/
+
+.ico-hi-chai{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0 0;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-hi-chai:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0 0;    
+        }
+    }
+} 
+.ico-hi-speed-internet{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -1.45em 0em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-hi-speed-internet:before;
+            //background-position: 0 -62.24em;  
+            background-position: -1.45em 0em;    
+        }
+    }
+}
+.ico-breakfast{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -2.9em 0em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-breakfast:before;
+            //background-position: 0 -62.24em;  
+            background-position: -2.9em 0em;    
+        }
+    }
+} 
+.ico-legancy{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -4.39em 0em;
+    }
+    &:hover{
+        &:before{
+            @extend .ico-legancy:before;
+            //background-position: 0 -62.24em;  
+            background-position: -4.39em 0em;
+        }
+    }
+}
+.ico-champaigne-bottle{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -5.83em 0.1em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-champaigne-bottle:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -5.83em 0.1em;    
+        }
+    }
+}
+
+.ico-fruit-platter{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -7.3em 0em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-fruit-platter:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -7.3em 0em;    
+        }
+    }
+}
+
+.ico-cheese-platter{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -8.75em 0.1em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-cheese-platter:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -8.75em 0.1em;    
+        }
+    }
+}
+
+.ico-fresh-flowers{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -10.13em 0em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-fresh-flowers:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -10.13em 0em;    
+        }
+    }
+}
+
+.ico-blk-down-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-blk-down-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0em -1.68em;    
+        }
+    }
+}
+
+.ico-gre-left-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -1.9em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-gre-left-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -1.9em -1.68em;        
+        }
+    }
+}
+
+.ico-gre-right-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -3.7em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-gre-right-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -3.7em -1.68em;    
+        }
+    }
+}
+
+.ico-white-right-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -5.59em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-white-right-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -5.59em -1.68em;       
+        }
+    }
+}
+
+.ico-red-right-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -7.53em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-red-right-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -7.53em -1.68em;    
+        }
+    }
+}
+
+.ico-gre-pluse{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -9.44em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-gre-pluse:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -10.13em -1.68em;    
+        }
+    }
+}
+
+.ico-gre-up-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -11.329em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-gre-up-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -11.329em -1.68em;    
+        }
+    }
+}
+
+.ico-gre-down-arrow{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -13.229em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-gre-down-arrow:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -13.229em -1.68em;    
+        }
+    }
+}
+
+.ico-gre-cal{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -15.12em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-gre-cal:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -15.12em -1.68em;    
+        }
+    }
+}
+
+.ico-blk-close{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -17em -1.68em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-blk-close:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -17em -1.68em;    
+        }
+    }
+}
+.ico-white-info{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0 -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-white-info:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0 -3.44em;    
+        }
+    }
+}
+
+.ico-grey-close{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -1.86em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-blk-close:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -1.86em -3.44em;    
+        }
+    }
+}
+
+.ico-navigation{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -3.8em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-navigation:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -3.8em -3.44em;    
+        }
+    }
+}
+
+.ico-navigat{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -5.65em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-navigat:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -5.65em -3.44em;    
+        }
+    }
+}
+
+.ico-email{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -7.5em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-email:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -7.5em -3.44em;    
+        }
+    }
+}
+
+.ico-phone{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -9.45em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-phone:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -9.45em -3.44em;    
+        }
+    }
+}
+
+.ico-white-search{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -11.32em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-blk-close:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -11.32em -3.44em;    
+        }
+    }
+}
+
+.ico-white-car{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -13.2em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-white-car:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -13.2em -3.44em;    
+        }
+    }
+}
+
+.ico-white-crossing{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -15.1em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-white-crossing:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -15.1em -3.44em;    
+        }
+    }
+}
+
+.ico-white-train{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -17em -3.44em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-white-train:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -17em -3.44em;    
+        }
+    }
+}
+
+.ico-car{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -18.94em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-car:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -18.94em -5.24em    
+        }
+    }
+}
+
+.ico-crossing{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -20.76em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-crossing:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -20.76em -5.24em;    
+        }
+    }
+}
+
+.ico-train{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -22.65em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-train:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -22.65em -5.24em;    
+        }
+    }
+}
+
+.ico-qote{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -24.61em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-qote:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -24.61em -5.24em;    
+        }
+    }
+}
+
+.ico-left-sign{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -26.45em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-left-sign:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -26.45em -5.24em;    
+        }
+    }
+}
+
+.ico-right-sign{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -28.43em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-right-sign:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -28.43em -5.24em;    
+        }
+    }
+}
+
+.ico-building{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -30.23em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-building:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -30.23em -5.24em;    
+        }
+    }
+}
+
+.ico-lalit-navigation{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -32.1em -5.24em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-lalit-navigation:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -32.1em -5.24em;    
+        }
+    }
+}
+
+.ico-facebook{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-facebook:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0em -10.4em;    
+        }
+    }
+}
+
+.ico-twitter{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -20.70em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-twitter:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -20.70em -10.4em;    
+        }
+    }
+}
+
+.ico-instagram{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -22.65em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-instagram:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -22.65em -10.4em;    
+        }
+    }
+}
+
+.ico-g-plus{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -24.55em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-g-plus:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -24.55em -10.4em;    
+        }
+    }
+}
+.ico-youtube{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -26.31em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-youtube:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -26.31em -10.4em;    
+        }
+    }
+}
+.ico-blogger{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -28.21em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-blogger:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -28.21em -10.4em;    
+        }
+    }
+}
+.ico-tripadvisor{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -30.33em -10.4em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-tripadvisor:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -30.33em -10.4em;    
+        }
+    }
+}
+.ico-small-left-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0 -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-left-grey:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0 -12.26em;    
+        }
+    }
+}
+.ico-small-down-black{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -20.70em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-down-black:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -20.70em -12.26em;    
+        }
+    }
+}
+.ico-small-left-white{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -22.75em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-left-white:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -22.75em -12.26em;    
+        }
+    }
+}
+.ico-small-right-white{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -24.48em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-right-white:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -24.48em -12.26em;    
+        }
+    }
+}
+.ico-small-up-white{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -26.45em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-up-white:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -26.45em -12.26em;    
+        }
+    }
+}
+.ico-small-down-white{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -28.25em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-down-white:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -28.25em -12.26em;    
+        }
+    }
+}
+.ico-small-left-black{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -30.55em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-left-black:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -30.55em -12.26em;    
+        }
+    }
+}
+.ico-small-right-black{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -32.2em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-right-black:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -32.2em -12.26em;    
+        }
+    }
+}
+
+.ico-small-left-red{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -33.7em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-left-red:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -33.7em -12.26em;    
+        }
+    }
+}
+.ico-small-right-red{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -35.3em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-right-red:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -35.3em -12.26em;     
+        }
+    }
+}
+.ico-left-red{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -32.2em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-left-red:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -32.2em -12.26em;    
+        }
+    }
+}
+.ico-right-red{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -32.2em -12.26em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-right-red:before; 
+            //background-position: 0 -62.24em;  
+            background-position: -32.2em -12.26em;    
+        }
+    }
+}
+.ico-facebook-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0 -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-facebook-grey:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0 -14.14em;    
+        }
+    }
+}
+.ico-twitter-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -1.8em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-twitter-grey:before; 
+            background-position: -1.8em -14.14em;    
+        }
+    }
+}
+.ico-instagram-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -3.75em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-instagram-grey:before; 
+            background-position: -3.75em -14.14em;    
+        }
+    }
+}
+.ico-g-plus-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -5.65em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-g-plus-grey:before; 
+            background-position: -5.65em -14.14em;    
+        }
+    }
+}
+.ico-youtube-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -7.42em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-youtube-grey:before; 
+            background-position: -7.42em -14.14em;    
+        }
+    }
+}
+.ico-blogger-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -9.34em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-blogger-grey:before; 
+            background-position: -9.34em -14.14em;    
+        }
+    }
+}
+.ico-tripadvisor-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -11.45em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-tripadvisor-grey:before; 
+            background-position: -11.45em -14.14em;    
+        }
+    }
+}
+.ico-small-up-red{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -13.35em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-up-red:before; 
+            background-position: -13.35em -14.14em;    
+        }
+    }
+}
+.ico-small-down-red{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -15em -14.14em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-small-down-red:before;  
+            background-position: -15em -14.14em;    
+        }
+    }
+}
+.ico-close-grey{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -16.7em -14.10em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-close-grey:before; 
+            background-position: -16.7em -14.10em;    
+        }
+    }
+}
+.ico-humbug{
+   &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: 0 -17.5em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-humbug:before; 
+            //background-position: 0 -62.24em;  
+            background-position: 0 -17.5em;    
+        }
+    }
+}
+.ico-print{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -1.8em -17.5em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-print:before;   
+            background-position: -1.8em -17.5em;    
+        }
+    }
+}
+.ico-check-with-circle{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -3.75em -17.5em;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-check-with-circle:before; 
+            background-position: -3.75em -17.5em;     
+        }
+    }
+}
+
+
+

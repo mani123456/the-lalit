@@ -1,0 +1,9 @@
+.menuScroll .wp-submenu-wrap {
+	margin-top: 0 !important;
+}
+
+.menuBGColor{
+	background-color: #191e23;
+}
+
+.menuTextColor{color: #eee;}

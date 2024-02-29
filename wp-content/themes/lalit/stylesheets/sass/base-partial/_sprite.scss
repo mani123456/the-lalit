@@ -1,0 +1,127 @@
+
+$font-size: 1em; //Base font size
+$sprite-size: ( $font-size * 1); // Calculating width & height of the icon
+
+@mixin font-em-px ($font-size) { //Font size em to px converter
+    font-size: ($font-size*8)+px; 
+}
+.size-8 { @include font-em-px(1); }
+.size-16 { @include font-em-px(2); }
+.size-24 { @include font-em-px(3); }
+.size-32 { @include font-em-px(4); }
+.size-40 { @include font-em-px(5); }
+.size-48 { @include font-em-px(6); }
+
+//$sprite-bg-size:( $font-size * 36.5); // Calculating background size of the icon
+$sprite-bg-size:( $font-size * 12.898); // Calculating background size of the icon
+//$sprite-dimensions :($sprite * $sprite-size);
+.sprite{
+    display: inline-block;
+    height: $sprite-size;
+    vertical-align: middle;
+}
+.sprite{
+    &:before{
+        content: '';
+        display: inline-block;
+        background: url('../../images/sprite.svg');
+        /*-webkit-background-size: 17.5em 2.3125em;
+        background-position: 0 0;*/
+        background-size: $sprite-bg-size auto;
+    }
+}
+.ico-facebook{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -0.006em 0;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-facebook:before;
+            //background-position: 0 -62.24em;  
+            background-position: -0.006em -61.01em;  
+        }
+    }
+}
+.size-8{
+    &:before{
+        background-position: -0.076em -61.01em;  
+    }
+    &:hover{
+        &:before{
+            background-position: -0.076em -61.01em;  
+        }
+    }
+}
+.ico-facebook-hover{
+    @extend .ico-facebook:hover;
+}
+
+.ico-twitter{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -40.03em 0;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-twitter:before;
+            background-position: -40.03em -61.01em;    
+        }
+    }
+}
+.ico-twitter-hover{
+    @extend .ico-twitter:hover;
+}
+
+.ico-google-plus{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -41.35em 0;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-google-plus:before;
+            background-position: -41.35em -61.01em;    
+        }
+    }
+}
+.ico-google-plus-hover{
+    @extend .ico-google-plus:hover;
+}
+.ico-instagram{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -42.65em 0;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-instagram:before;
+            background-position: -42.65em -61.01em;    
+        }
+    }
+}
+
+.ico-instagram-hover{
+    @extend .ico-instagram:hover;   
+}
+.ico-linkedin{
+    &:before{
+        width: $sprite-size;
+        height: $sprite-size;
+        background-position: -59.53em 0;    
+    }
+    &:hover{
+        &:before{
+            @extend .ico-linkedin:before;
+            background-position: -59.53em -61.01em;    
+        }
+    }
+}
+.ico-linkedin-hover{
+    @extend .ico-linkedin:hover;
+}
+

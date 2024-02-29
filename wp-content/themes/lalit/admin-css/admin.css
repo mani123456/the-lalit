@@ -1,0 +1,11 @@
+#adminmenu .menuScroll.opensub .wp-submenu-wrap {
+	/*height:700px;
+	overflow-y: auto;*/
+	/*top: auto !important;*/
+	margin-top: 0 !important;
+}
+.menuBGColor{
+	background-color: #191e23;
+}
+
+.menuTextColor{color: #eee;}

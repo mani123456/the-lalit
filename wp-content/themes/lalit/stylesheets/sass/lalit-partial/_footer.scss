@@ -1,0 +1,270 @@
+.footer{ 
+    &.detail-page{
+        margin-top: 0;
+    }
+    margin-top: 44px;
+    .foot-top-sec{
+        padding:9px 0;
+        border-top: 1px solid #cccccc; 
+        .btn-block{
+            margin:9px 0 0;    
+            .lbl-block{
+                margin: 8px 0 10px;
+                .label{
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 1em;
+                    color: #363636;
+                    padding-right: 20px;
+                }
+            }
+            
+            .btn{
+                line-height: 16px;
+                font-size: 13px;
+                font-weight: 500;
+                font-style: normal;           
+                letter-spacing: 1px;                
+                text-shadow: 0px 2px 18px rgba(0, 0, 0, 0.86);
+            }
+        }
+    }
+    .foot-body-sec{
+        background-color: #181818;
+        padding: 40px 0px 0px;
+        h6{ 
+            color:#a4a4a4;           
+            font-family: $font-family-prata;
+            margin-bottom: 1.1em;
+            letter-spacing: 0.7px;
+        }
+        p{
+            color:#666666;
+            font-size: 1.4em;
+            line-height: 1.5em;
+            margin-bottom:1.8em;
+            letter-spacing: 0.7px;
+        }
+        ul{
+            list-style-type: none;
+            padding-left:0em;
+            li{
+                margin-bottom:12px;
+                a{
+                    font-size:1.4em;
+                    line-height: 1.2em;
+                    font-family: $font-family-roboto;
+                    color:#747474;
+                    font-weight: 300;
+                    letter-spacing: 0.7px;
+                    &:hover{
+                        color: $col-white;    
+                    }
+                }
+            }
+        }
+        .email-field{
+            height: 36px;
+            margin-right: 9px;
+            width: 166px;
+            font-size:12px;
+            padding-left: 10px;
+            background-color:#2b2b2b;
+            border:0px;
+            color:#6b6b6b;
+            letter-spacing: 0.6px;
+        }
+         span{
+    
+            color: #747474;
+            font-size: 1.4em;
+            line-height: 1.5em;
+        }
+        .address{
+            margin-bottom:30px;
+            span{
+                width: 100%;display: block;
+            }
+        }
+        .contact-info{
+            margin-bottom: 0;
+            span{
+                margin-bottom:5px; 
+                letter-spacing: 0;
+            }   
+        }
+        .btn{
+            font-family: $font-family-roboto;
+            font-weight: 400;
+            padding: 1em 2em;
+            font-size: 1.2em;
+        }
+        .footer-info{
+            margin-bottom: 1.5em;
+            li{
+                float:right;
+                margin:0px 15px 0px 0px;
+                padding-right:15px;
+                border-right:1px solid #747474;
+                &:nth-child(1){
+                 margin: 0px;
+                 padding-right:0px;
+                 border-right: 0px
+                }
+                a{
+                    font-size: 1.2em;
+                    line-height: 1.2em;
+                    color:#666666;
+                }
+            }
+            p{
+                font-size:1.1em;
+                line-height: 1.3em;
+                font-weight: 300;
+                margin-bottom: 0;
+            }
+        }
+        .social-info{
+            text-align: right;
+            margin-bottom: 2.5em;
+            li{
+                display: inline-block;
+                margin:0px 25px 0px 0px;
+                &:last-child{
+                    margin: 0px;
+                }
+                .lbl-find-us{
+                    font-family: $font-family-prata;
+                    font-size: 1.6em;
+                    line-height: 1.25em;
+                    color: #666666;
+                }
+                a{
+                    .sprite{
+                        font-size: 20px;
+                        line-height: 20px;
+                        &.ico-facebook{
+                            &:before{
+                                background-position: 0 -14.14em;
+                            }
+                        }
+                        &.ico-twitter{
+                            &:before{
+                                background-position: -1.8em -14.14em;
+                            }
+                        }
+                        &.ico-instagram{
+                            &:before{
+                                background-position: -3.75em -14.14em;
+                            }
+                        }
+                        &.ico-g-plus{
+                            &:before{
+                                background-position: -5.65em -14.14em;
+                            }
+                        }
+                        &.ico-youtube{
+                            &:before{
+                                background-position: -7.42em -14.14em;
+                            }
+                        }
+                        &.ico-blogger{
+                            &:before{
+                                background-position: -9.34em -14.14em;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .sprite{
+                            &.ico-facebook{
+                                &:before{
+                                    background-position: 0em -10.4em;        
+                                }
+                            }
+                            &.ico-twitter{
+                                &:before{
+                                    background-position: -20.7em -10.4em;
+                                }
+                            }
+                            &.ico-instagram{
+                                &:before{
+                                    background-position: -22.65em -10.4em;
+                                }
+                            }
+                            &.ico-g-plus{
+                                &:before{
+                                    background-position: -24.55em -10.4em;
+                                }
+                            }
+                            &.ico-youtube{
+                                &:before{
+                                    background-position: -26.31em -10.4em;
+                                }
+                            }
+                            &.ico-blogger{
+                                &:before{
+                                    background-position: -28.21em -10.4em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foot-motif-img{
+        /*background: url('/wp-content/themes/lalit/images/footer-motif.png')no-repeat;
+        background-position: 65px top;
+        height: 145px;
+        margin-top: 30px; */
+    }
+    } 
+    
+    
+    
+    .wpcf7{
+
+   width: 100%;
+        
+        p{
+            display: inline-block;
+          
+        }
+    
+    .wpcf7-form-control.wpcf7-text{
+            height: 34px;
+            margin-right: 9px;
+            width: 166px;
+            font-size: 12px;
+            padding: 6px;
+            background-color: #2b2b2b;
+            border: 0;
+            color: #6b6b6b;
+            letter-spacing: .6px;
+            outline: none;
+        }
+    .wpcf7-submit {
+        font-weight: 400;
+        font-size: 12px;
+        background-color: #bd1e24;
+        color: #fff;
+        height: 34px;
+        border: none;
+        line-height: 18px;
+        box-shadow: inset 0 4px 4px 0 rgba(0,0,0,.22);
+        width: 97px;
+        text-transform: uppercase;
+
+        }
+} 
+    
+    
+    
+}
+.foot-copyright-sec{
+    background: url('/wp-content/themes/lalit/images/footer-motif.png') no-repeat center bottom;
+    width: 300px;
+    padding: 60px 0 0px 0; 
+}
+
+
+  

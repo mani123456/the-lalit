@@ -1,0 +1,36 @@
+ // Core base framwork 
+@import 'base.scss';  
+
+// Core variables and mixins
+@import 'lalit-partial/_variables.scss'; 
+
+// Core css
+@import 'lalit-partial/_grid.scss';
+@import 'lalit-partial/_typography.scss';
+@import 'lalit-partial/_sprite.scss';
+@import 'lalit-partial/_button-groups.scss';
+@import 'lalit-partial/_form.scss';
+@import 'lalit-partial/_navigation.scss'; 
+@import 'lalit-partial/_datepicker.scss'; 
+@import 'lalit-partial/_flexslider.scss';
+@import 'lalit-partial/_booking-widget.scss';
+@import 'lalit-partial/_accordion.scss'; 
+@import 'lalit-partial/_footer.scss';
+@import 'lalit-partial/_room-detail.scss'; 
+@import 'lalit-partial/_services-box.scss'; 
+@import 'lalit-partial/_gallery.scss';
+@import 'lalit-partial/_animation.scss';
+@import 'lalit-partial/_temperature.scss';  
+
+ 
+//Page lavel css  
+@import 'style-guide.scss';                  
+@import 'promotional.scss';                        
+            
+                             
+//Responsive 
+@import 'lalit-partial/_responsive.scss'; 
+ 
+ 
+   
+                 

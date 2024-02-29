@@ -1,0 +1,291 @@
+//Room deatil page
+.content-body{
+    -webkit-box-shadow:inset 7px 0 6px -7px rgba(0,0,0,0.4);;
+     box-shadow: inset 7px 0 6px -7px rgba(0,0,0,0.4);;
+    padding: 40px 0 0 40px; 
+    position: relative;
+    .listing-block{
+        margin-bottom: 30px;
+           .card-info{
+                padding-bottom: 0;
+            }
+         } 
+    
+    &.recommend-area{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+   }
+
+.sub-section{
+    margin-bottom:30px;
+    padding-right: 3em;
+    .item-title{
+        font-size: 1.8em;
+        line-height: 1.2em;
+    } 
+}
+
+.marB0{
+    margin-bottom:0px;
+}
+
+.marL0{
+    margin-left: 0;
+}
+
+.bdr-bottom-gold{
+    border-bottom: 2px solid #976107;
+    display: inline-block;
+    line-height: 1.1em;
+    font-weight: normal;
+    padding-bottom: 6px;
+}
+.bdr-bottom-grey{
+     border-bottom: 1px solid #eaeaea;
+     display: inline-block;
+     padding-bottom:15px;
+}
+.hotel-services-title{
+    font:#{1.9em/1.5em} $font-family-roboto;
+    font-weight: 400;
+    color:#363636;
+    padding:0px 0px 15px 0px;
+    
+    .bdr-bottom-grey{
+     padding-bottom: 10px;   
+    }
+}
+.room-info{
+    padding-left: 15px;
+    li{
+        margin-bottom: 15px;
+        display: block;
+        &:last-child{
+             margin-bottom:0px;
+        }
+        
+        &.dining-time{
+            margin: 0;
+        }
+    }
+    .field-text{
+        display:block;
+        margin-bottom: 7px;
+        font-size: 14px;
+        color: #333333;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+    }
+    .field-text-info{
+        color:#666666;
+        font-size: 14px;
+        letter-spacing: 1.5px;    
+    }
+     .field-text-prize{
+        @extend .field-text;
+        display:inline;
+        text-transform: capitalize;
+        color: #a09d9d;
+        margin:0px 8px 0px 15px;
+          font-style: italic;
+         font-weight: 300;
+    }
+
+   
+    
+    .meta-label{
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+    
+        
+    .meta-value{
+ 
+        font-weight: 500;
+        color: #666;
+    }
+}
+
+
+.reserve-blk{
+    padding-left: 15px;
+    position: absolute;
+    bottom: 0px;
+    .price-block{
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+}
+
+
+.reserve-btn{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 1.7em;
+    padding: 0.8em 4em;
+    background-color: #000;
+    background-image: none;  
+}
+.service-list{
+    padding-left:1em;
+    margin-left: 5px;
+    li{
+       
+        font-size: 1.4em;
+        color: #333;
+        letter-spacing: .7px;
+        margin-bottom: 15px;
+        line-height: 1.5em;
+        font-weight: 300;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+        span{
+            color: #666;
+        }
+    }
+}
+
+.sideBar-nav-list{
+    .active{
+        background-color: #fad698;
+        a{
+            font-weight: 700;
+        }
+    }
+}
+
+//Accordian styling in room details
+.sidebar-head{
+    font-size: 12.5px;
+    color: #333333;
+    margin: 0px 0px 40px 0px;
+    font-weight: 500;
+    display: block;
+} 
+.sidebar-nav{
+   .sideBar-nav-list{
+        margin-bottom: 4em;
+    }    
+}
+ .sideBar-nav-Head{
+    display: block;
+    color: #363636;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+     font-weight: 700;
+}
+.sideBar-nav-info{
+    li{
+        &:hover{
+            background-color: #fad698;
+            font-weight: 600;
+            cursor: auto;
+            color: #000000;
+        }
+        a{
+            display: block;
+            font-size: 1.4em;
+            color: #333;
+            letter-spacing: .7px;
+            font-weight: 300;
+            padding: 6px 13px;
+        }
+    }
+}
+//flexslider
+.img-block .flexslider{
+    margin:0px;
+}
+
+
+
+//offer tab
+
+.offer-bg{
+    margin-bottom: 50px;
+}
+.offer-tab{
+    
+    .filter-nav{
+        padding: 20px 0;
+        border-top: 1px solid #f3e0c8;
+         border-bottom: 1px solid #f3e0c8; 
+    }
+    .smooth-scroll{ 
+        .filter-fist-item{
+            a{  
+            border-left: 0;
+            }
+        }
+
+        .nav-item{
+            &.active{
+                a{
+                color: #db2128;
+                }
+            }
+        }
+        a{
+            color: #666666;
+            font-weight: 300;
+            border-left:1px solid #f3e0c8;
+            font-size: 14px;
+            letter-spacing: 0.4px;
+            line-height: 13px;
+                &:hover{
+                color: #db2128;
+                }
+        }
+    }
+}
+
+.filter-label{
+      font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.71em;
+  letter-spacing: 0.7px;
+  color: #000000;
+}
+
+.offer-listing-block{
+    margin-bottom: 35px;
+    img{
+        height: auto;
+    }
+}
+
+
+.meta-value-italic{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #333333;
+}
+
+
+.offer-sec{
+    padding-bottom: 50px;
+}
+
+
+.offer-inner{ 
+    ul{
+        margin-bottom: 17px;
+        li{
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+            margin-bottom: 6px;
+        }
+    }
+ }

@@ -1,0 +1,107 @@
+.btn{
+    display: inline-block;    
+    font-size: 0.875em;
+    line-height: 1.42857143;
+    font-weight: 400;
+    color: #333333;
+    padding: 0.429em 0.857em;
+    margin-bottom: 0;
+    background-color: $white-col;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 22px;
+    background-image: none;
+    cursor: pointer;
+    white-space: nowrap;
+    vertical-align: middle;
+    &:hover{
+        color: $white-col;
+        background-color: $blue-col;
+        border-color: $blue-col;
+        box-shadow: 0 0 5px #e6e6e6;
+    }
+    &:focus{
+        box-shadow: 0 0 5px #17B6ED;
+        border: 1px solid #17B6ED;
+    }
+}
+.button-focus{
+    @extend .btn:focus;
+    outline: 0;
+}
+.button-hover{
+    @extend .btn:hover;
+}
+.button-active{
+    @extend .btn:hover;
+}
+.btn-fill{
+    color: $white-col;
+    border-color: $blue-col;
+    background-color: $blue-col;
+    &:hover{
+        color: $blue-col;
+        border-color: $blue-col;
+        background-color: $white-col;
+    }
+    &:focus{
+        color: $white-col;
+        border: 1px solid #17B6ED;
+        background-color: $blue-col;
+        box-shadow: 0 0 5px #17B6ED;
+    }
+}
+.btn-fill-hover{
+    @extend .btn-fill:hover;
+}
+.btn-fill-focus{
+    @extend .btn-fill:focus;
+}
+.btn-fill-active{
+    @extend .btn-fill:hover;
+}
+.btn-text{
+    color: $blue-col;
+    border: 0;
+    &:hover{
+        color: #000;
+        border: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    &:focus{
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.btn-text-focus{
+    @extend .btn-text:focus;
+}
+.btn-text-hover{
+    @extend .btn-text:hover;
+}
+.btn-text-active{
+    @extend .btn-text:hover;
+}
+
+.btn-lg{ 
+    font-size: 1.125em;
+    line-height: 1.3333333;
+    padding: 0.556em 0.889em;
+}
+
+.btn-sm{
+    font-size: 0.750em;
+    line-height: 1.000;
+    padding: 0.417em 0.833em;
+}
+.btn-xs{    
+    font-size: 0.625em;
+    line-height: 1.000;
+    padding: 0.200em 0.417em;
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,110 @@
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+}
+@-webkit-keyframes zoomOut {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes zoomOut {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut
+}
+
+/*@end*/
+
+/*@Loader*/
+#loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.8);
+    
+    .loader-icon{
+        width: 32px;
+        height: 32px;
+        //border: 2px solid #e1bd85;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 1;
+        /*animation: preloader 3s ease infinite;
+        -ms-animation: preloader 3s ease infinite;
+        -moz-animation: preloader 3s ease infinite;
+        -webkit-animation: preloader 3s ease infinite;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;*/
+        //border-radius: 100%;  
+        background: url(../../images/loader.gif) no-repeat left top;
+    }
+}
+@-webkit-keyframes preloader {
+	0% { border-width:2px }
+	100% { border-width: 50px; opacity: 0; }
+}
+@-moz-keyframes preloader {
+	0% { border-width:2px }
+	100% { border-width: 50px; opacity: 0;}
+}
+@-ms-keyframes preloader {
+	0% { border-width:2px }
+	100% { border-width: 50px;opacity: 0; }
+}
+@-o-keyframes preloader {
+	0% { border-width:2px }
+	100% { border-width: 50px; opacity: 0;}
+}
+@keyframes preloader {
+	0% { border-width:2px }
+	100% { border-width: 50px; opacity: 0;}
+}
+/* @ end*/

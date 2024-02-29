@@ -1,0 +1,109 @@
+
+.input-text, .input-password, .textarea, .input-email{
+    font-size:14px;
+    line-height: 14px;
+    margin: 0;
+    outline: 0;
+    padding: 5px;
+    background: #FFF;
+    border: 1px solid #dddddd;
+    color: #000000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.label{
+    display: block;
+    margin-bottom: 5px; 
+}
+.required:after{
+     content:"*";
+     color:#9F3A38;
+     padding-left: 5px;
+}
+.checkbox-label{
+    padding-left: 20px;
+    display: block;
+}
+.form-group.required .control-label:after { 
+   content:"*";
+   color:red;
+}
+
+.form-row{
+    margin-bottom: 0.9em;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.form-row:after, .form-row:before{
+    content: "";
+    display: table;
+}
+.form-row:after {clear: both;}
+.error{position: relative;}
+.error .input-text{
+    border-color:#E0B4B4!important;
+    color:#9F3A38;
+}
+.error-icon:after {
+    content: "";
+    width: 30px;
+    height: 26px;
+    border: 1px solid #000000;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.error .hint{
+    font-size: 11px;
+    line-height: 11px;
+    padding: 5px;
+    display: block;
+    color: #9F3A38;
+}
+.select{
+    display: block;
+    height: auto;
+    width: 100%;
+    background: #FFF;
+}
+.form-body{box-sizing: border-box;margin-bottom: 0.9em;}
+.form-header{margin-bottom: 1.5em;}
+.form-title{margin-bottom: 0.2em;}
+
+.form-title small{font-size: 14px;}
+.input-label-block{
+    margin-bottom: 0.3em;
+    display: block;
+}
+.form{ box-sizing: border-box;}
+.input-with-icon{    
+    position: relative;
+    box-sizing: border-box;
+}
+.input-with-icon{
+    .input-text{
+        padding-right: 35px;
+    }
+    .icon{
+        border: 1px solid #000;
+        text-indent: -9999px;
+        width: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 28px;
+    }
+    .ui-datepicker-trigger{
+        border: 1px solid #000;
+        text-indent: -9999px;
+        width: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 28px;   
+    }
+}   
+

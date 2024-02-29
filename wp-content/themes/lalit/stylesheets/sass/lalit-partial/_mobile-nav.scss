@@ -1,0 +1,145 @@
+
+.mobile-sticky{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    height: 42px;
+    padding: 10px 0;
+    .logo-block{
+        width: 50%;
+        float: left;
+        
+    }
+    .btn-block{
+        width: 50%;
+        float: right;
+        margin: 0;
+        .tertiary-btn{
+            text-align: right;
+            float: right;
+            margin-right: 15px;
+        }
+    }
+    .menu-trigger {
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .logo{
+        display: inline-block;
+        width: 70px;   
+        margin: 0 0 0 10px; 
+    }
+}
+.mobile-nav{
+    .container{
+        padding: 0;
+    }
+    .primary-nav{
+        margin: 0;
+        .nav{
+            position: fixed;
+            top: 62px;
+            background-color: #fff;
+            left: -240px;
+            width: 240px;
+            height: 100%;   
+            margin: 0;
+            //overflow-y: scroll;
+            .primary-navigation{
+                position: absolute;
+                top: 0;
+                background-color: #fff;
+                left: 0;
+                width: 100%;
+                margin: 0;
+                overflow-y: scroll;
+                z-index: 1;
+                .nav-item{
+                    display: block;
+                    margin-left: 0;
+                    a{
+                        position: relative;
+                        padding: 10px 20px;
+                        text-align: left;
+                        margin-left: 20px;
+                        .sprite{
+                            &:before{
+                                position: absolute;
+                                top: 10px;
+                                left: -10px;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .sub-menu{
+                            display: none;
+                        }
+                    }
+                }
+                .secondary-menu{
+                    display: none;
+                    .secondary-menu-item{
+                        position: absolute;
+                        top: 0;
+                        left: -240px;
+                        width: 240px;
+                        height: 100%;
+                        background-color: #fff;
+                        z-index: 1;
+                    }
+                }
+                .tertiary-menu{
+                    display: none;
+                    .tertiary-menu-item{
+                        position: absolute;
+                        top: 0;
+                        left: -240px;
+                        width: 240px;
+                        height: 100%;
+                        background-color: #fff;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+#mobile-book-widget{
+    position: static;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: none;
+    .footer_booking_widget{
+        .col2{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+.ui-widget{
+    &.ui-widget-content{
+        width: 70%!important;
+        top: 50% !important;
+        left: 0!important;
+        right: 0!important;
+        margin: 0 auto;
+        padding: 25px 10px 10px;
+        margin: -142.5px auto;
+    }
+    ui-datepicker-calendar{
+        width: 100%; 
+    }
+}
+.ui-datepicker{
+    .ui-datepicker-buttonpane{
+        button{
+            top: 10px;
+            right: 10px;
+        }
+    }
+}   

@@ -1,0 +1,40 @@
+.filter-Head{
+	text-transform: uppercase;
+	font-size:1em;
+	color: #939292;
+	padding-bottom:0.938em;
+	margin-bottom: 0.333em;
+	border-bottom:1px solid #ccc;
+}
+.filter-grp-Head{
+    color:#000;
+    font-weight:600;
+    display:block;
+    padding:0.333em 0em;
+    text-decoration:none;
+    &:focus{
+        border: 0em;
+    }
+   span{
+        display: inline-block;
+        &.ico-arrow{
+            float: right;
+            height: 5px;
+        }
+    }
+}
+.filter-list {
+	.filter-grp-list{
+  		&:last-child{
+			padding: 0px;
+        }
+        .filter-data{
+            margin-bottom: 20px;
+        }
+	}   
+}
+#map {
+	height: 400px;
+	width: 100%;
+}
+
